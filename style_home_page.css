@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+}
+body{
+    background-color: #71f795;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 17vh;
+    margin-top: 20vh;
+}
+.student_btn, .faculty_btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.student_btn{
+    background-color: #2926f8;
+    color: white;
+    text-decoration: none;
+}
+.faculty_btn{
+    background-color: #b62a2a;
+    color: white;
+    text-decoration: none;
+}
+
+.student_btn:hover, .faculty_btn:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.student_btn:active, .faculty_btn:active{
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0;
+}
+.ftr{
+    margin-top: auto;
+}
+.ftrtxt{
+    margin: 0;
+    text-align: center;
+}

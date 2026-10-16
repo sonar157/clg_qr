@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Faculty Page</title>
+        <link rel="stylesheet" href="style_faculty_page.css">
+    </head>
+    <body>
+        <main>
+        <div class="semester">
+        <label for="sem">Semester</label>
+        <select name="sem" id="sem">
+            <option value="" disabled selected>--Please select--</option>
+            <option value="i">I</option>
+            <option value="ii">II</option>
+            <option value="iii">III</option>
+            <option value="iv">IV</option>
+            <option value="v">V</option>
+            <option value="vi">VI</option>
+            <option value="vii">VII</option>
+        </select>
+        </div>
+        <div class="all_branches">
+        <label for="branch">Branch</label>
+        <select name="branch" id="branch">
+            <option value="" disabled selected>--Please select--</option>
+            <option value="civil">CIVIL</option>
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+            <option value="it">IT</option>
+            <option value="mech">MECH</option>
+            <option value="mba">CB</option>
+            <option value="aiml">AIML</option>
+            <option value="ds">DS</option>
+        </select>
+        </div>
+        <div class="all_sub">
+        <div class="IT">
+            <div id="i_it_subject-section" hidden>
+                <label for="i_it_subject">Subject</label>
+                <select name="subject" id="i_it_subject">
+                    <option value="" disabled selected>--Please select--</option>
+                    <option value="m1">LINEAR ALGEBRA AND ORDINARY DIFFERENTIAL EQUATIONS</option>
+                    <option value="spnm">SEMICONDUCTOR PHYSICS AND NANO MATERIALS</option>
+                    <option value="bee">BASIC ELECTRICAL &amp; ELECTRONICS ENGINEERING</option>
+                    <option value="ip">INTRODUCTION TO PROGRAMMING</option>
+                    <option value="ems">ENGINEERING MECHANICS - STATICS</option>
+                    <option value="spnm_lab">SEMICONDUCTOR PHYSICS LAB</option>
+                    <option value="bee_lab">BASIC ELECTRICAL &amp; ELECTRONICS ENGINEERING LAB</option>
+                    <option value="ip_lab">INTRODUCTION TO PROGRAMMING LAB</option>
+                </select>
+            </div>
+
+            <div id="ii_it_subject-section" hidden>
+                <label for="ii_it_subject">Subject</label>
+                <select name="subject" id="ii_it_subject">
+                    <option value="" disabled selected>--Please select--</option>
+                    <option value="m2">NUMERICAL METHODS &amp; ADVANCED CALCULUS</option>
+                    <option value="chem">ENGINEERING CHEMISTRY</option>
+                    <option value="eng">COMMUNICATIVE ENGLISH</option>
+                    <option value="pps">PROGRAMMING FOR PROBLEM SOLVING</option>
+                    <option value="DM">DISCRETE MATHEMATICS</option>
+                    <option value="eg_lab">ENGINEERING GRAPHICS LAB</option>
+                    <option value="ecs_lab">ENGLISH COMMUNICATION SKILLS LAB</option>
+                    <option value="pps_lab">PROGRAMMING FOR PROBLEM SOLVING LAB</option>
+                </select>
+            </div>
+            <div id="iii_it_subject-section" hidden>
+                <label for="iii_it_subject">Subject</label>
+                <select name="subject" id="iii_it_subject">
+                    <option value="" disabled selected>--Please select--</option>
+                    <option value="m3">PROBABILITY &amp; STATISTICS</option>
+                    <option value="dld">DIGITAL LOGIC DESIGN</option>
+                    <option value="ds">DATA STRUCTURES</option>
+                    <option value="oops">OBJECT ORIENTED PROGRAMMING</option>
+                    <option value="cn">COMPUTER NETWORKS</option>
+                    <option value="py">PYTHON PROGRAMMING</option>
+                    <option value="dti">DESIGN THINKING &amp; INNOVATION</option>
+                    <option value="ds_lab">DATA STRUCTURES LAB</option>
+                    <option value="oops_lab">OBJECT ORIENTED PROGRAMMING LAB</option>
+                    <option value="es">ENVIRONMENTAL SCIENCE</option>
+                </select>
+            </div>
+            <div id="iv_it_subject-section" hidden>
+                <label for="iv_it_subject">Subject</label>
+                <select name="subject" id="iv_it_subject">
+                    <option value="" disabled selected>--Please select--</option>
+                    <option value="co">COMPUTER ORGANIZATION</option>
+                    <option value="os">OPERATING SYSTEMS</option>
+                    <option value="fwt">FRONTEND WEB TECHNOLOGIES</option>
+                    <option value="dbms">DATABASE MANAGEMENT SYSTEMS</option>
+                    <option value="daa">DESIGN AND ANALYSIS OF ALGORITHMS</option>
+                    <option value="le">LINUX ESSENTIALS</option>
+                    <option value="fwt_lab">FRONTEND WEB TECHNOLOGIES LAB</option>
+                    <option value="rdbms_lab">RELATIONAL DATABASE MANAGEMENT SYSTEMS LAB</option>
+                    <option value="coi">CONSTITUTION OF INDIA</option>
+                </select>
+            </div>
+            <div id="v_it_subject-section" hidden>
+                <label for="v_it_subject">Subject</label>
+                <select name="subject" id="v_it_subject">
+                    <option value="" disabled selected>--Please select--</option>
+                    <option value="acd">ADVANCED COMPUTER DESIGN</option>
+                    <option value="ml">MACHINE LEARNING</option>
+                    <option value="se">SOFTWARE ENGINEERING</option>
+                    <option value="wn">WIRELESS NETWORKS</option>
+                    <option value="peai">PROFESSIONAL ELECTIVE: ARTIFICIAL INTELLIGENCE</option>
+                    <option value="dip">DIGITAL IMAGE PROCESSING</option>
+                    <option value="ss_lab">SOFT SKILLS LAB</option>
+                    <option value="ml_lab">MACHINE LEARNING LAB</option>
+                    <option value="peai_lab">PROFESSIONAL ELECTIVE: ARTIFICIAL INTELLIGENCE LAB</option>
+                    <option value="tpw_ipr">TECHNICAL PAPER WRITING AND INTELLECTUAL PROPERTY RIGHTS</option>
+                </select>
+            </div>
+            <div id="vi_it_subject-section" hidden>
+                <label for="vi_it_subject">Subject</label>
+                <select name="subject" id="vi_it_subject">
+                    <option value="" disabled selected>--Please select--</option>
+                    <option value="dl">DEEP LEARNING</option>
+                    <option value="cp">COMPETITIVE PROGRAMMING</option>
+                    <option value="cns">CRYPTOGRAPHY AND NETWORK SECURITY</option>
+                    <option value="dpf">DATA PROCESSING FRAMEWORKS</option>
+                    <option value="ooad">OBJECT-ORIENTED ANALYSIS AND DESIGN</option>
+                    <option value="nlp">NATURAL LANGUAGE PROCESSING</option>
+                    <option value="d_sys">DISTRIBUTED SYSTEMS</option>
+                    <option value="mt">MIDDLEWARE TECHNOLOGIES</option>
+                    <option value="bda">BIG DATA ANALYTICS</option>
+                    <option value="iot">INTERNET OF THINGS</option>
+                    <option value="fsd">FULL STACK DEVELOPMENT</option>
+                    <option value="dl_lab">DEEP LEARNING LAB</option>
+                    <option value="cp_lab">COMPETITIVE PROGRAMMING LAB</option>
+                    <option value="mt_lab">MIDDLEWARE TECHNOLOGIES LAB</option>
+                    <option value="bda_lab">BIG DATA ANALYTICS LAB</option>
+                    <option value="iot_lab">INTERNET OF THINGS LAB</option>
+                </select>
+            </div>
+            <div id="vii_it_subject-section" hidden>
+                <label for="vii_it_subject">Subject</label>
+                <select name="subject" id="vii_it_subject">
+                    <option value="" disabled selected>--Please select--</option>
+                    <option value="imed">INDUSTRIAL MANAGEMENT AND ENTREPRENEURSHIP DEVELOPMENT</option>
+                    <option value="bct">BLOCKCHAIN TECHNOLOGY</option>
+                    <option value="df">DIGITAL FORENSICS</option>
+                    <option value="swt">SOFTWARE TESTING</option>
+                    <option value="it">INFORMATION THEORY</option>
+                    <option value="gt">GAME THEORY</option>
+                    <option value="qc">QUANTUM COMPUTING</option>
+                    <option value="gen_ai">GENERATIVE ARTIFICIAL INTELLIGENCE</option>
+                    <option value="cs">CYBER SECURITY</option>
+                    <option value="cv">COMPUTER VISION</option>
+                    <option value="dev">DEVELOPMENT AND OPERATIONS</option>
+                    <option value="nsqlbd">NOSQL AND BIG DATA</option>
+                    <option value="gen_ai_lab">GENERATIVE ARTIFICIAL INTELLIGENCE LAB</option>
+                    <option value="cs_lab">CYBER SECURITY LAB</option>
+                    <option value="cv_lab">COMPUTER VISION LAB</option>
+                </select>
+            </div>
+            <div class="CSE">
+                <!-- SEMESTER I -->
+                <div id="i_cs_subject-section">
+                    <label for="i_cs_subject">Subject</label>
+                    <select name="subject" id="i_cs_subject">
+                        <option value="">--Please select--</option>
+                        <option value="laod">LINEAR ALGEBRA AND ORDINARY DIFFERENTIAL EQUATIONS</option>
+                        <option value="spnm">SEMICONDUCTOR PHYSICS AND NANO MATERIALS</option>
+                        <option value="ecs">COMMUNICATIVE ENGLISH</option>
+                        <option value="ip">INTRODUCTION TO PROGRAMMING</option>
+                        <option value="eg_lab">ENGINEERING GRAPHICS LAB</option>
+                        <option value="spnm_lab">SEMICONDUCTOR PHYSICS LAB</option>
+                        <option value="ecs_lab">ENGLISH COMMUNICATION SKILLS LAB</option>
+                        <option value="ip_lab">INTRODUCTION TO PROGRAMMING LAB</option>
+                        <option value="itw">IT WORKSHOP</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER II -->
+                <div id="ii_cs_subject-section">
+                    <label for="ii_cs_subject">Subject</label>
+                    <select name="subject" id="ii_cs_subject">
+                        <option value="">--Please select--</option>
+                        <option value="nmac">NUMERICAL METHODS &amp; ADVANCED CALCULUS</option>
+                        <option value="chem">ENGINEERING CHEMISTRY</option>
+                        <option value="beee">BASIC ELECTRICAL &amp; ELECTRONICS ENGINEERING</option>
+                        <option value="pps">PROGRAMMING FOR PROBLEM SOLVING</option>
+                        <option value="dm">DISCRETE MATHEMATICS</option>
+                        <option value="ems_lab">ENGINEERING MECHANICS AND SURVEYING LAB </option>
+                        <option value="chem_lab">ENGINEERING CHEMISTRY LAB</option>
+                        <option value="beee_lab">BASIC ELECTRICAL &amp; ELECTRONICS ENGINEERING LAB</option>
+                        <option value="pps_lab">PROGRAMMING FOR PROBLEM SOLVING LAB</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER III -->
+                <div id="iii_cs_subject-section">
+                    <label for="iii_cs_subject">Subject</label>
+                    <select name="subject" id="iii_cs_subject">
+                        <option value="">--Please select--</option>
+                        <option value="ps">PROBABILITY &amp; STATISTICS</option>
+                        <option value="dld">DIGITAL LOGIC DESIGN</option>
+                        <option value="ds">DATA STRUCTURES</option>
+                        <option value="oops">OBJECT ORIENTED PROGRAMMING</option>
+                        <option value="cn">COMPUTER NETWORKS</option>
+                        <option value="py">PYTHON PROGRAMMING</option>
+                        <option value="ds_lab">DATA STRUCTURES LAB</option>
+                        <option value="oops_lab">OBJECT ORIENTED PROGRAMMING LAB</option>
+                        <option value="coi">CONSTITUTION OF INDIA</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER IV -->
+                <div id="iv_cs_subject-section">
+                    <label for="iv_cs_subject">Subject</label>
+                    <select name="subject" id="iv_cs_subject">
+                        <option value="">--Please select--</option>
+                        <option value="co">COMPUTER ORGANIZATION</option>
+                        <option value="atfl">AUTOMATE THEORY &amp; FORMAL LANGUAGES</option>
+                        <option value="wt">WEB TECHNOLOGIES</option>
+                        <option value="dbms">DATABASE MANAGEMENT SYSTEMS</option>
+                        <option value="daa">DESIGN AND ANALYSIS OF ALGORITHMS</option>
+                        <option value="cps">COMPETITIVE PROGRAMMING SKILLS</option>
+                        <option value="dti">DESIGN THINKING &amp; INNOVATION</option>
+                        <option value="wt_lab">WEB TECHNOLOGIES LAB</option>
+                        <option value="rdbms_lab">RDBMS LAB</option>
+                        <option value="es">ENVIRONMENTAL SCIENCE</option>
+                        <option value="ads">ADVANCED DATA STRUCTURES &amp; ALGORITHMS</option>
+                        <option value="adbms">ADVANCED DATABASE MANAGEMENT SYSTEMS </option>
+                        <option value="rps">REALTIME OPERATING SYSTEMS</option>
+                        <option value="qc">QUANTUM COMPUTING</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER V -->
+                <div id="v_cs_subject-section">
+                    <label for="v_cs_subject">Subject</label>
+                    <select name="subject" id="v_cs_subject">
+                        <option value="">--Please select--</option>
+                        <option value="cd">COMPILER DESIGN</option>
+                        <option value="os">OPERATING SYSTEMS</option>
+                        <option value="ml">MACHINE LEARNING</option>
+
+                        <!-- Professional Elective I -->
+                        <option value="ai">ARTIFICIAL INTELLIGENCE</option>
+                        <option value="wn">WIRELESS NETWORKS</option>
+                        <option value="pa">PARALLEL ALGORITHMS</option>
+
+                        <!-- Job Oriented Elective I -->
+                        <option value="ep">ENTERPRISE PROGRAMMING</option>
+                        <option value="fsd">FULL STACK DEVELOPMENT</option>
+                        <option value="mt">MIDDLEWARE TECHNOLOGIES</option>
+
+                        <option value="le">LINUX ESSENTIALS</option>
+                        <option value="ml_lab">MACHINE LEARNING LAB</option>
+
+                        <!-- Job Oriented Elective I Labs -->
+                        <option value="ep_lab">ENTERPRISE PROGRAMMING LAB</option>
+                        <option value="fsd_lab">FULL STACK DEVELOPMENT LAB</option>
+                        <option value="mt_lab">MIDDLEWARE TECHNOLOGIES LAB</option>
+                    </select>
+                </div>
+            </div>
+            <div class="MECH">
+                <!-- SEMESTER I -->
+                <div id="i_me_subject-section">
+                    <label for="i_me_subject">Subject</label>
+                    <select name="subject" id="i_me_subject">
+                        <option value="">--Please select--</option>
+                        <option value="laod">LINEAR ALGEBRA AND ORDINARY DIFFERENTIAL EQUATIONS</option>
+                        <option value="chem">ENGINEERING CHEMISTRY</option>
+                        <option value="beee">BASIC ELECTRICAL &amp; ELECTRONICS ENGINEERING</option>
+                        <option value="pp">PYTHON PROGRAMMING</option>
+                        <option value="ems">ENGINEERING MECHANICS - STATICS</option>
+                        <option value="eclab">ENGINEERING CHEMISTRY LAB</option>
+                        <option value="beeelab">BASIC ELECTRICAL &amp; ELECTRONICS ENGINEERING LAB</option>
+                        <option value="pplab">PYTHON PROGRAMMING LAB</option>
+                        <option value="itw">IT WORKSHOP</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER II -->
+                <div id="ii_me_subject-section">
+                    <label for="ii_me_subject">Subject</label>
+                    <select name="subject" id="ii_me_subject">
+                        <option value="">--Please select--</option>
+                        <option value="nmac">NUMERICAL METHODS &amp; ADVANCED CALCULUS</option>
+                        <option value="aomt">ADVANCED OPTICS AND MATERIALS TESTING </option>
+                        <option value="ce">COMMUNICATIVE ENGLISH</option>
+                        <option value="emd">ENGINEERING MECHANICS - DYNAMICS</option>
+                        <option value="eg">ENGINEERING GRAPHICS</option>
+                        <option value="eplab">ENGINEERING PHYSICS LAB</option>
+                        <option value="ecslab">ENGLISH COMMUNICATION SKILLS LAB</option>
+                        <option value="emslab">ENGINEERING MECHANICS &amp; SURVEYING LAB</option>
+                        <option value="wp">WORKSHOP PRACTICE</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER III -->
+                <div id="iii_me_subject-section">
+                    <label for="iii_me_subject">Subject</label>
+                    <select name="subject" id="iii_me_subject">
+                        <option value="">--Please select--</option>
+                        <option value="ps">PROBABILITY AND STATISTICS</option>
+                        <option value="bmp">BASIC MANUFACTURING PROCESSES</option>
+                        <option value="sm">STRENGTH OF MATERIALS</option>
+                        <option value="fmhm">FLUID MECHANICS &amp; HYDRAULIC MACHINES</option>
+                        <option value="phdlab">PNEUMATIC &amp; HYDRAULIC DRIVES LAB</option>
+                        <option value="dti">DESIGN THINKING &amp; INNOVATION</option>
+                        <option value="smfmlab">STRENGTH OF MATERIALS &amp; FLUID MECHANICS LAB</option>
+                        <option value="bmplab">BASIC MANUFACTURING PROCESSES LAB</option>
+                        <option value="es">ENVIRONMENTAL SCIENCE</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER IV -->
+                <div id="iv_me_subject-section">
+                    <label for="iv_me_subject">Subject</label>
+                    <select name="subject" id="iv_me_subject">
+                        <option value="">--Please select--</option>
+                        <option value="me">MATERIAL ENGINEERING</option>
+                        <option value="mcmt">METAL CUTTING &amp; MACHINE TOOLS</option>
+                        <option value="km">KINEMATICS OF MACHINES</option>
+                        <option value="te">THERMAL ENGINEERING</option>
+                        <option value="iem">INDUSTRIAL ENGINEERING &amp; MANAGEMENT</option>
+                        <option value="splclab">SENSORICS &amp; PLC LAB</option>
+                        <option value="msp">MACHINE SHOP PRACTICE</option>
+                        <option value="mlab">MODELING LAB</option>
+                        <option value="camd">COMPUTER AIDED MACHINE DRAWING</option>
+                        <option value="hwys">HEALTH AND WELLNESS, YOGA AND SPORTS</option>
+                        <option value="ci">CONSTITUTION OF INDIA</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER V -->
+                <div id="v_me_subject-section">
+                    <label for="v_me_subject">Subject</label>
+                    <select name="subject" id="v_me_subject">
+                        <option value="">--Please select--</option>
+                        <option value="dm">DYNAMICS OF MACHINES</option>
+                        <option value="dme">DESIGN OF MACHINE ELEMENTS</option>
+                        <option value="mt">MANUFACTURING TECHNOLOGY</option>
+
+                        <!-- Professional Elective I -->
+                        <option value="asm">ADVANCED STRENGTH OF MATERIALS</option>
+                        <option value="icegast">I.C. ENGINES AND GAS TURBINES</option>
+                        <option value="nt">NANO TECHNOLOGY</option>
+
+                        <!-- Job Oriented Elective I -->
+                        <option value="aiml">ARTIFICIAL INTELLIGENT AND MACHINE LEARNING</option>
+                        <option value="dt">DRONE TECHNOLOGY</option>
+
+                        <option value="sslab">SOFT SKILLS LAB</option>
+                        <option value="dmlab">DESIGN AND METROLOGY LAB</option>
+                        <option value="ficelab">FUELS AND IC ENGINES LAB</option>
+                        <option value="tpwipr">TECHNICAL PAPER WRITING AND IPR</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER VI -->
+                <div id="vi_me_subject-section">
+                    <label for="vi_me_subject">Subject</label>
+                    <select name="subject" id="vi_me_subject">
+                        <option value="">--Please select--</option>
+                        <option value="cad_cam">CAD/CAM</option>
+                        <option value="dte">DESIGN OF TRANSMISSION ELEMENTS</option>
+                        <option value="ht">HEAT TRANSFER</option>
+
+                        <!-- Professional Elective II -->
+                        <option value="fea">FINITE ELEMENT ANALYSIS</option>
+                        <option value="nonces">NON-CONVENTIONAL ENERGY SOURCES</option>
+                        <option value="amp">ADVANCED MANUFACTURING PROCESSES</option>
+                        <option value="or">OPERATIONS RESEARCH</option>
+
+                        <!-- Job Oriented Elective II -->
+                        <option value="dms">DATA BASE MANAGEMENT SYSTEMS</option>
+                        <option value="ida">INTRODUCTION TO DATA ANALYTICS</option>
+
+                        <option value="itlab">INTERNET OF THINGS LAB</option>
+                        <option value="htlab">HEAT TRANSFER LAB</option>
+                        <option value="cae_lab">CAE LAB</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER VII -->
+                <div id="vii_me_subject-section">
+                    <label for="vii_me_subject">Subject</label>
+                    <select name="subject" id="vii_me_subject">
+                        <option value="">--Please select--</option>
+                        <option value="om">OPERATIONS MANAGEMENT</option>
+
+                        <!-- Professional Elective III -->
+                        <option value="pe3">PROFESSIONAL ELECTIVE - 3</option>
+
+                        <!-- Job Oriented Elective III -->
+                        <option value="joboe3">JOB ORIENTED ELECTIVE - 3</option>
+
+                        <!-- Open Elective -->
+                        <option value="oe">OPEN ELECTIVE</option>
+
+                        <option value="r3dplab">ROBOTICS &amp; 3D PRINTING LAB</option>
+                        <option value="cam_lab">CAM LAB</option>
+                        <option value="term_paper">TERM PAPER</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="CIVIL">
+                <!-- I SEMESTER -->
+                <div id="i_ce_subject-section">
+                    <label for="i_ce_subject">Subject</label>
+                    <select name="subject" id="i_ce_subject">
+                        <option value="">--Please select--</option>
+                        <option value="laode">LINEAR ALGEBRA AND ORDINARY DIFFERENTIAL EQUATIONS</option>
+                        <option value="aomt">ADVANCED OPTICS AND MATERIAL TESTING</option>
+                        <option value="ice">INTRODUCTION TO CIVIL ENGINEERING</option>
+                        <option value="ce">COMMUNICATIVE ENGLISH</option>
+                        <option value="etmt">ELECTRICAL TECHNOLOGY &amp; MECHANICAL TECHNOLOGY</option>
+                        <option value="cplab">COMPUTER PROGRAMMING LAB</option>
+                        <option value="plab">PHYSICS LAB</option>
+                        <option value="ecslab">ENGLISH COMMUNICATION SKILLS LAB</option>
+                    </select>
+                </div>
+
+                <!-- II SEMESTER -->
+                <div id="ii_ce_subject-section">
+                    <label for="ii_ce_subject">Subject</label>
+                    <select name="subject" id="ii_ce_subject">
+                        <option value="">--Please select--</option>
+                        <option value="nmac">NUMERICAL METHODS AND ADVANCED CALCULUS</option>
+                        <option value="ec">ENGINEERING CHEMISTRY</option>
+                        <option value="em">ENGINEERING MECHANICS</option>
+                        <option value="bmpc">BUILDING MATERIALS, PLANNING AND CONSTRUCTION</option>
+                        <option value="eg">ENGINEERING GRAPHICS</option>
+                        <option value="clab">CHEMISTRY LAB</option>
+                        <option value="wp">WORKSHOP PRACTICE</option>
+                        <option value="es">ENVIRONMENTAL STUDIES</option>
+                        <option value="nss">NATIONAL SERVICE SCHEME</option>
+                    </select>
+                </div>
+
+                <!-- III SEMESTER -->
+                <div id="iii_ce_subject-section">
+                    <label for="iii_ce_subject">Subject</label>
+                    <select name="subject" id="iii_ce_subject">
+                        <option value="">--Please select--</option>
+                        <option value="ps">PROBABILITY AND STATISTICS</option>
+                        <option value="surveying">SURVEYING</option>
+                        <option value="sm">SOLID MECHANICS</option>
+                        <option value="ct">CONCRETE TECHNOLOGY</option>
+                        <option value="fm">FLUID MECHANICS</option>
+                        <option value="mpce">MATLAB PROGRAMMING FOR CIVIL ENGINEERS (SKILL ORIENTED COURSE-I)</option>
+                        <option value="bdlab">BUILDING DRAWING LAB</option>
+                        <option value="eglab">ENGINEERING GEOLOGY LAB</option>
+                        <option value="slab">SURVEYING LAB</option>
+                        <option value="pehv">PROFESSIONAL ETHICS AND HUMAN VALUES</option>
+                    </select>
+                </div>
+
+                <!-- IV SEMESTER -->
+                <div id="iv_ce_subject-section">
+                    <label for="iv_ce_subject">Subject</label>
+                    <select name="subject" id="iv_ce_subject">
+                        <option value="">--Please select--</option>
+                        <option value="te">TECHNICAL ENGLISH</option>
+                        <option value="ee">ENVIRONMENTAL ENGINEERING</option>
+                        <option value="mm">MECHANICS OF MATERIALS</option>
+                        <option value="hhm">HYDRAULICS &amp; HYDRAULIC MACHINES</option>
+                        <option value="sm">SOIL MECHANICS</option>
+                        <option value="sslab">SOFT SKILLS LAB (SKILL ORIENTED COURSE-II)</option>
+                        <option value="eelab">ENVIRONMENTAL ENGINEERING LAB</option>
+                        <option value="hhmlab">H &amp; HM LAB</option>
+                        <option value="mtl">MATERIALS TESTING LABORATORY</option>
+                    </select>
+                </div>
+
+                <!-- V SEMESTER -->
+                <div id="v_ce_subject-section">
+                    <label for="v_ce_subject">Subject</label>
+                    <select name="subject" id="v_ce_subject">
+                        <option value="">--Please select--</option>
+                        <option value="sa">STRUCTURAL ANALYSIS</option>
+                        <option value="fe">FOUNDATION ENGINEERING</option>
+                        <option value="dcs">DESIGN OF CONCRETE STRUCTURES</option>
+                        <option value="pei">PROFESSIONAL ELECTIVE-I</option>
+                        <option value="aee">ADVANCED ENVIRONMENTAL ENGINEERING</option>
+                        <option value="lowcht">LOW COST HOUSING TECHNIQUES</option>
+                        <option value="tpa">TOWN PLANNING AND ARCHITECTURE</option>
+                        <option value="set">SUSTAINABLE ENGINEERING &amp; TECHNOLOGY</option>
+                        <option value="joboei">JOB ORIENTED ELECTIVE-I</option>
+                        <option value="rsdt">REMOTE SENSING &amp; DRONE TECHNOLOGY</option>
+                        <option value="pfs">PLUMBING AND FIRE SERVICES</option>
+                        <option value="rwsds">RURAL WATER SUPPLY DISTRIBUTION SYSTEMS</option>
+                        <option value="bimsaci">BIM (SKILL ADVANCED COURSE-I)</option>
+                        <option value="gel">GEOTECHNICAL ENGINEERING LABORATORY</option>
+                        <option value="ppl">PYTHON PROGRAMMING LABORATORY</option>
+                        <option value="ic">INDIAN CONSTITUTION</option>
+                    </select>
+                </div>
+
+                <!-- VI SEMESTER -->
+                <div id="vi_ce_subject-section">
+                    <label for="vi_ce_subject">Subject</label>
+                    <select name="subject" id="vi_ce_subject">
+                        <option value="">--Please select--</option>
+                        <option value="dss">DESIGN OF STEEL STRUCTURES</option>
+                        <option value="wre">WATER RESOURCE ENGINEERING</option>
+                        <option value="he">HIGHWAY ENGINEERING</option>
+                        <option value="peii">PROFESSIONAL ELECTIVE-II</option>
+                        <option value="asa">ADVANCED STRUCTURAL ANALYSIS</option>
+                        <option value="eg">ENVIRONMENTAL GEOTECHNICS</option>
+                        <option value="pc">PRESTRESSED CONCRETE</option>
+                        <option value="airnpc">AIR AND NOISE POLLUTION &amp; CONTROL</option>
+                        <option value="joboeii">JOB ORIENTED ELECTIVE-II</option>
+                        <option value="eqs">ESTIMATION AND QUANTITY SURVEYING</option>
+                        <option value="hars">HEALTH AUDIT OF STRUCTURES AND RETROFITTING OF STRUCTURES</option>
+                        <option value="ore">OFFSHORE RENEWABLE ENERGY</option>
+                        <option value="gis">GEOGRAPHICAL INFORMATION SYSTEM (SKILL ADVANCED COURSE-II)</option>
+                        <option value="asl">ADVANCED SURVEYING LABORATORY</option>
+                        <option value="saddl">STRUCTURAL ANALYSIS DESIGN AND DETAILING LABORATORY</option>
+                        <option value="tel">TRANSPORTATION ENGINEERING LABORATORY</option>
+                        <option value="eitk">ESSENCE OF INDIAN TRADITIONAL KNOWLEDGE</option>
+                    </select>
+                </div>
+
+                <!-- VII SEMESTER -->
+                <div id="vii_ce_subject-section">
+                    <label for="vii_ce_subject">Subject</label>
+                    <select name="subject" id="vii_ce_subject">
+                        <option value="">--Please select--</option>
+                        <option value="cm">CONSTRUCTION MANAGEMENT</option>
+                        <option value="peiii">PROFESSIONAL ELECTIVE-III</option>
+                        <option value="adcs">ADVANCED DESIGN OF CONCRETE STRUCTURE</option>
+                        <option value="istince">INSTRUMENTATION AND SENSOR TECHNOLOGY IN CIVIL ENGINEERING</option>
+                        <option value="wm">WATERSHED MANAGEMENT</option>
+                        <option value="git">GROUND IMPROVEMENT TECHNIQUES</option>
+                        <option value="peiv">PROFESSIONAL ELECTIVE-IV</option>
+                        <option value="rae">RAILWAY AND AIR PORT ENGINEERING</option>
+                        <option value="erds">EARTHQUAKE RESISTANT DESIGN OF STRUCTURES</option>
+                        <option value="geos">GEOSYNTHETICS</option>
+                        <option value="gdm">GROUND WATER DEVELOPMENT AND MANAGEMENT</option>
+                        <option value="oe">OPEN ELECTIVE</option>
+                        <option value="pev">PROFESSIONAL ELECTIVE-V</option>
+                        <option value="is">IRRIGATION STRUCTURES</option>
+                        <option value="pad">PAVEMENT ANALYSIS AND DESIGN</option>
+                        <option value="dppm">DISASTER PREPAREDNESS AND PLANNING MANAGEMENT</option>
+                        <option value="shwm">SOLID AND HAZARDOUS WASTE MANAGEMENT</option>
+                        <option value="joboeiii">JOB ORIENTED ELECTIVE-III</option>
+                        <option value="be">BRIDGE ENGINEERING</option>
+                        <option value="gbs">GREEN BUILDINGS AND SUSTAINABILITY</option>
+                        <option value="qcqa">QUALITY CONTROL AND QUALITY ASSURANCE</option>
+                        <option value="qepml">QUANTITY ESTIMATION &amp; PROJECT MANAGEMENT LABORATORY</option>
+                    </select>
+                </div>
+
+            <div class="cyber">
+
+                <!-- SEMESTER I -->
+                <div id="i_cb_subject-section">
+                    <label for="i_cb_subject">Subject</label>
+                    <select name="subject" id="i_cb_subject">
+                        <option value="">--Please select--</option>
+                        <option value="laode">LINEAR ALGEBRA AND ORDINARY DIFFERENTIAL EQUATIONS</option>
+                        <option value="spnm">SEMICONDUCTOR PHYSICS AND NANO MATERIALS</option>
+                        <option value="ce">COMMUNICATIVE ENGLISH</option>
+                        <option value="ip">INTRODUCTION TO PROGRAMMING</option>
+                        <option value="eglab">ENGINEERING GRAPHICS LAB</option>
+                        <option value="splab">SEMICONDUCTOR PHYSICS LAB</option>
+                        <option value="ecslab">ENGLISH COMMUNICATION SKILLS LAB</option>
+                        <option value="iplab">INTRODUCTION TO PROGRAMMING LAB</option>
+                        <option value="itw">IT WORKSHOP</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER II -->
+                <div id="ii_cb_subject-section">
+                    <label for="ii_cb_subject">Subject</label>
+                    <select name="subject" id="ii_cb_subject">
+                        <option value="">--Please select--</option>
+                        <option value="nmac">NUMERICAL METHODS AND ADVANCED CALCULUS</option>
+                        <option value="ec">ENGINEERING CHEMISTRY</option>
+                        <option value="beee">BASIC ELECTRICAL &amp; ELECTRONICS ENGINEERING</option>
+                        <option value="pps">PROGRAMMING FOR PROBLEM-SOLVING</option>
+                        <option value="dm">DISCRETE MATHEMATICS</option>
+                        <option value="emlab">ENGINEERING MECHANICS LAB</option>
+                        <option value="eclab">ENGINEERING CHEMISTRY LAB</option>
+                        <option value="beeelab">BASIC ELECTRICAL &amp; ELECTRONICS ENGINEERING LAB</option>
+                        <option value="ppslab">PROGRAMMING FOR PROBLEM-SOLVING LAB</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER III -->
+                <div id="iii_cb_subject-section">
+                    <label for="iii_cb_subject">Subject</label>
+                    <select name="subject" id="iii_cb_subject">
+                        <option value="">--Please select--</option>
+                        <option value="ps">PROBABILITY STATISTICS</option>
+                        <option value="dlco">DIGITAL LOGIC &amp; COMPUTER ORGANIZATION</option>
+                        <option value="ds">DATA STRUCTURES</option>
+                        <option value="oop">OBJECT ORIENTED PROGRAMMING</option>
+                        <option value="ics">INTRODUCTION TO CYBER SECURITY</option>
+                        <option value="pp">PYTHON PROGRAMMING (SKILL ENHANCEMENT COURSE-I)</option>
+                        <option value="dslab">DATA STRUCTURES LAB</option>
+                        <option value="ooplab">OBJECT ORIENTED PROGRAMMING LAB</option>
+                        <option value="ci">CONSTITUTION OF INDIA</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER IV -->
+                <div id="iv_cb_subject-section">
+                    <label for="iv_cb_subject">Subject</label>
+                    <select name="subject" id="iv_cb_subject">
+                        <option value="">--Please select--</option>
+                        <option value="cn">COMPUTER NETWORKS</option>
+                        <option value="os">OPERATING SYSTEMS</option>
+                        <option value="cswebt">CLIENT-SIDE WEB TECHNOLOGIES</option>
+                        <option value="dms">DATABASE MANAGEMENT SYSTEMS</option>
+                        <option value="daa">DESIGN AND ANALYSIS OF ALGORITHMS</option>
+                        <option value="klvlabs">KALI LINUX VIRTUAL LAB SETUP (SEC-II)</option>
+                        <option value="dtilab">DESIGN THINKING &amp; INNOVATION LAB</option>
+                        <option value="cswebtlab">CLIENT-SIDE WEB TECHNOLOGIES LAB</option>
+                        <option value="rdbms_lab">RDBMS LAB</option>
+                        <option value="es">ENVIRONMENTAL SCIENCE</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER V -->
+                <div id="v_cb_subject-section">
+                    <label for="v_cb_subject">Subject</label>
+                    <select name="subject" id="v_cb_subject">
+                        <option value="">--Please select--</option>
+                        <option value="atcd">AUTOMATA THEORY &amp; COMPILER DESIGN</option>
+                        <option value="cns">CRYPTOGRAPHY &amp; NETWORK SECURITY</option>
+                        <option value="ehse">ETHICAL HACKING &amp; SOCIAL ENGINEERING</option>
+
+                        <!-- PROFESSIONAL ELECTIVE-I -->
+                        <option value="iscl">INTRODUCTION TO INFORMATION SECURITY AND CYBER LAWS</option>
+                        <option value="ai">ARTIFICIAL INTELLIGENCE</option>
+                        <option value="pa">PARALLEL ALGORITHMS</option>
+
+                        <!-- JOB ORIENTED ELECTIVE-I -->
+                        <option value="fsdl">FULL STACK DEVELOPMENT</option>
+                        <option value="cpl">CLOUD PROGRAMMING</option>
+                        <option value="epl">ENTERPRISE PROGRAMMING</option>
+
+                        <option value="vaptlab">VULNERABILITY ASSESSMENT &amp; PENETRATION TESTING LAB</option>
+                        <option value="ehselab">ETHICAL HACKING &amp; SOCIAL ENGINEERING LAB</option>
+
+                        <!-- JOB ORIENTED ELECTIVE-I LAB -->
+                        <option value="fsdl">FULL STACK DEVELOPMENT LAB</option>
+                        <option value="cpl">CLOUD PROGRAMMING LAB</option>
+                        <option value="epl">ENTERPRISE PROGRAMMING LAB</option>
+                    </select>
+                </div>
+            </div>
+            <div class="AIML">
+
+                <!-- SEMESTER I -->
+                <div id="i_cm_subject-section">
+                    <label for="i_cm_subject">Subject</label>
+                    <select name="subject" id="i_cm_subject">
+                        <option value="">--Please select--</option>
+                        <option value="laode">LINEAR ALGEBRA AND ORDINARY DIFFERENTIAL EQUATIONS</option>
+                        <option value="spnm">SEMICONDUCTOR PHYSICS AND NANO MATERIALS</option>
+                        <option value="ce">COMMUNICATIVE ENGLISH</option>
+                        <option value="ip">INTRODUCTION TO PROGRAMMING</option>
+                        <option value="eglab">ENGINEERING GRAPHICS LAB</option>
+                        <option value="splab">SEMICONDUCTOR PHYSICS LAB</option>
+                        <option value="ecslab">ENGLISH COMMUNICATION SKILLS LAB</option>
+                        <option value="iplab">INTRODUCTION TO PROGRAMMING LAB</option>
+                        <option value="itw">IT WORKSHOP</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER II -->
+                <div id="ii_cm_subject-section">
+                    <label for="ii_cm_subject">Subject</label>
+                    <select name="subject" id="ii_cm_subject">
+                        <option value="">--Please select--</option>
+                        <option value="nmac">NUMERICAL METHODS AND ADVANCED CALCULUS</option>
+                        <option value="ec">ENGINEERING CHEMISTRY</option>
+                        <option value="beee">BASIC ELECTRICAL &amp; ELECTRONICS ENGINEERING</option>
+                        <option value="pps">PROGRAMMING FOR PROBLEM SOLVING</option>
+                        <option value="dm">DISCRETE MATHEMATICS</option>
+                        <option value="emlab">ENGINEERING MECHANICS LAB</option>
+                        <option value="eclab">ENGINEERING CHEMISTRY LAB</option>
+                        <option value="beeelab">BASIC ELECTRICAL &amp; ELECTRONICS ENGINEERING LAB</option>
+                        <option value="ppslab">PROGRAMMING FOR PROBLEM SOLVING LAB</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER III -->
+                <div id="iii_cm_subject-section">
+                    <label for="iii_cm_subject">Subject</label>
+                    <select name="subject" id="iii_cm_subject">
+                        <option value="">--Please select--</option>
+                        <option value="ps">PROBABILITY &amp; STATISTICS</option>
+                        <option value="dld">DIGITAL LOGIC DESIGN</option>
+                        <option value="ds">DATA STRUCTURES</option>
+                        <option value="oop">OBJECT ORIENTED PROGRAMMING</option>
+                        <option value="iaiml">INTRODUCTION TO ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING</option>
+                        <option value="pp">PYTHON PROGRAMMING (SKILL ENHANCEMENT COURSE - I)</option>
+                        <option value="cs">COMPUTATIONAL STATISTICS</option>
+                        <option value="dslab">DATA STRUCTURES LAB</option>
+                        <option value="ooplab">OBJECT ORIENTED PROGRAMMING LAB</option>
+                        <option value="ci">CONSTITUTION OF INDIA</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER IV -->
+                <div id="iv_cm_subject-section">
+                    <label for="iv_cm_subject">Subject</label>
+                    <select name="subject" id="iv_cm_subject">
+                        <option value="">--Please select--</option>
+                        <option value="co">COMPUTER ORGANIZATION</option>
+                        <option value="os">OPERATING SYSTEMS</option>
+                        <option value="fwebd">FRONTEND WEB DEVELOPMENT</option>
+                        <option value="dms">DATABASE MANAGEMENT SYSTEMS</option>
+                        <option value="daa">DESIGN AND ANALYSIS OF ALGORITHMS</option>
+                        <option value="app">ADVANCED PYTHON PROGRAMMING (SKILL ENHANCEMENT COURSE - II)</option>
+                        <option value="dti">DESIGN THINKING &amp; INNOVATION</option>
+                        <option value="webaplab">WEB APPLICATION PROGRAMMING LAB</option>
+                        <option value="rdbms_lab">RDBMS LAB</option>
+                        <option value="es">ENVIRONMENTAL SCIENCE</option>
+                    </select>
+                </div>
+            </div>
+            <div class="DS">
+                <!-- ==================== SEMESTER I ==================== -->
+                <div id="i_ds_subject-section">
+                    <label for="i_ds_subject">Subject</label>
+                    <select name="subject" id="i_ds_subject">
+                        <option value="">--Please select--</option>
+                        <option value="laode">LINEAR ALGEBRA AND ORDINARY DIFFERENTIAL EQUATIONS</option>
+                        <option value="spnm">SEMICONDUCTOR PHYSICS AND NANO MATERIALS</option>
+                        <option value="ce">COMMUNICATIVE ENGLISH</option>
+                        <option value="ip">INTRODUCTION TO PROGRAMMING</option>
+                        <option value="eglab">ENGINEERING GRAPHICS LAB</option>
+                        <option value="splab">SEMICONDUCTOR PHYSICS LAB</option>
+                        <option value="ecslab">ENGLISH COMMUNICATION SKILLS LAB</option>
+                        <option value="iplab">INTRODUCTION TO PROGRAMMING LAB</option>
+                        <option value="itw">IT WORKSHOP</option>
+                    </select>
+                </div>
+
+                <!-- ==================== SEMESTER II ==================== -->
+                <div id="ii_ds_subject-section">
+                    <label for="ii_ds_subject">Subject</label>
+                    <select name="subject" id="ii_ds_subject">
+                        <option value="">--Please select--</option>
+                        <option value="nmac">NUMERICAL METHODS AND ADVANCED CALCULUS</option>
+                        <option value="ec">ENGINEERING CHEMISTRY</option>
+                        <option value="beee">BASIC ELECTRICAL AND ELECTRONICS ENGINEERING</option>
+                        <option value="pps">PROGRAMMING FOR PROBLEM SOLVING</option>
+                        <option value="dm">DISCRETE MATHEMATICS</option>
+                        <option value="emlab">ENGINEERING MECHANICS LAB</option>
+                        <option value="eclab">ENGINEERING CHEMISTRY LAB</option>
+                        <option value="beeelab">BASIC ELECTRICAL AND ELECTRONICS ENGINEERING LAB</option>
+                        <option value="ppslab">PROGRAMMING FOR PROBLEM SOLVING LAB</option>
+                    </select>
+                </div>
+
+                <!-- ==================== SEMESTER III ==================== -->
+                <div id="iii_ds_subject-section">
+                    <label for="iii_ds_subject">Subject</label>
+                    <select name="subject" id="iii_ds_subject">
+                        <option value="">--Please select--</option>
+                        <option value="ps">PROBABILITY AND STATISTICS</option>
+                        <option value="dld">DIGITAL LOGIC DESIGN</option>
+                        <option value="ds">DATA STRUCTURES</option>
+                        <option value="oop">OBJECT ORIENTED PROGRAMMING</option>
+                        <option value="ids">INTRODUCTION TO DATA SCIENCE</option>
+                        <option value="ppseci">PYTHON PROGRAMMING (SKILL ENHANCEMENT COURSE - I)</option>
+                        <option value="cs">COMPUTATIONAL STATISTICS</option>
+                        <option value="dslab">DATA STRUCTURES LAB</option>
+                        <option value="ooplab">OBJECT ORIENTED PROGRAMMING LAB</option>
+                        <option value="ci">CONSTITUTION OF INDIA</option>
+                    </select>
+                </div>
+
+                <!-- ==================== SEMESTER IV ==================== -->
+                <div id="iv_ds_subject-section">
+                    <label for="iv_ds_subject">Subject</label>
+                    <select name="subject" id="iv_ds_subject">
+                        <option value="">--Please select--</option>
+                        <option value="co">COMPUTER ORGANIZATION</option>
+                        <option value="os">OPERATING SYSTEMS</option>
+                        <option value="cswebt">CLIENT-SIDE WEB TECHNOLOGIES</option>
+                        <option value="dms">DATABASE MANAGEMENT SYSTEMS</option>
+                        <option value="daa">DESIGN AND ANALYSIS OF ALGORITHMS</option>
+                        <option value="appsecii">ADVANCED PYTHON PROGRAMMING (SKILL ENHANCEMENT COURSE - II)</option>
+                        <option value="dti">DESIGN THINKING AND INNOVATION</option>
+                        <option value="cswebtlab">CLIENT-SIDE WEB TECHNOLOGIES LAB</option>
+                        <option value="rdbms_lab">RDBMS LAB</option>
+                        <option value="es">ENVIRONMENTAL SCIENCE</option>
+                    </select>
+                </div>
+            </div>
+            <div class="ECE">
+                <!-- SEMESTER I -->
+                <div id="ec_i_subject-section">
+                    <label for="ec_i_subject">Subject</label>
+                    <select name="subject" id="ec_i_subject">
+                        <option value="">--Please select--</option>
+                        <option value="laode">LINEAR ALGEBRA AND ORDINARY DIFFERENTIAL EQUATIONS</option>
+                        <option value="ec">ENGINEERING CHEMISTRY</option>
+                        <option value="feee">FUNDAMENTALS OF ELECTRICAL AND ELECTRONICS ENGINEERING</option>
+                        <option value="puc">PROGRAMMING USING C</option>
+                        <option value="ct">CIRCUIT THEORY</option>
+                        <option value="eclab">ENGINEERING CHEMISTRY LAB</option>
+                        <option value="feeelab">FUNDAMENTALS OF ELECTRICAL AND ELECTRONICS ENGINEERING LAB</option>
+                        <option value="puclab">PROGRAMMING USING C LAB</option>
+                        <option value="itw">IT WORKSHOP</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER II -->
+                <div id="ec_ii_subject-section">
+                    <label for="ec_ii_subject">Subject</label>
+                    <select name="subject" id="ec_ii_subject">
+                        <option value="">--Please select--</option>
+                        <option value="nmac">NUMERICAL METHODS AND ADVANCED CALCULUS</option>
+                        <option value="spnm">SEMICONDUCTOR PHYSICS AND NANO MATERIALS</option>
+                        <option value="ce">COMMUNICATIVE ENGLISH</option>
+                        <option value="puc">PROGRAMMING USING C++</option>
+                        <option value="eglab">ENGINEERING GRAPHICS LAB</option>
+                        <option value="emslab">ENGINEERING MECHANICS AND SURVEY LAB</option>
+                        <option value="splab">SEMICONDUCTOR PHYSICS LAB</option>
+                        <option value="ecslab">ENGLISH COMMUNICATION SKILLS LAB</option>
+                        <option value="puclab">PROGRAMMING USING C++ LAB</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER III -->
+                <div id="ec_iii_subject-section">
+                    <label for="ec_iii_subject">Subject</label>
+                    <select name="subject" id="ec_iii_subject">
+                        <option value="">--Please select--</option>
+                        <option value="ps">PROBABILITY AND STATISTICS</option>
+                        <option value="ae">ANALOG ELECTRONICS</option>
+                        <option value="de">DIGITAL ELECTRONICS</option>
+                        <option value="eft">ELECTROMAGNETIC FIELD THEORY</option>
+                        <option value="dsup">DATA STRUCTURES USING PYTHON</option>
+                        <option value="dtilab">DESIGN THINKING AND INNOVATION LAB</option>
+                        <option value="aelab">ANALOG ELECTRONICS LAB</option>
+                        <option value="delab">DIGITAL ELECTRONICS LAB</option>
+                        <option value="es">ENVIRONMENTAL SCIENCE</option>
+                    </select>
+                </div>
+
+                <!-- SEMESTER IV -->
+                <div id="ec_iv_subject-section">
+                    <label for="ec_iv_subject">Subject</label>
+                    <select name="subject" id="ec_iv_subject">
+                        <option value="">--Please select--</option>
+                        <option value="qt">QUANTUM TECHNOLOGIES</option>
+                        <option value="ss">SIGNALS AND SYSTEMS</option>
+                        <option value="ewtl">ELECTROMAGNETIC WAVES AND TRANSMISSION LINES</option>
+                        <option value="adc">ANALOG AND DIGITAL COMMUNICATIONS</option>
+                        <option value="aic">ANALOG INTEGRATED CIRCUITS</option>
+                        <option value="dduvhdl">DIGITAL DESIGN USING VERILOG HDL</option>
+                        <option value="aiclab">ANALOG INTEGRATED CIRCUITS LAB</option>
+                        <option value="adclab">ANALOG AND DIGITAL COMMUNICATIONS LAB</option>
+                        <option value="ci">CONSTITUTION OF INDIA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="EEE">
+                <!-- ==================== SEMESTER I ==================== -->
+
+                <div id="eee_i_subject-section">
+                    <label for="eee_i_subject">Subject</label>
+                    <select name="subject" id="eee_i_subject">
+                        <option value="">--Please select--</option>
+                        <option value="laode">LINEAR ALGEBRA AND ORDINARY DIFFERENTIAL EQUATIONS</option>
+                        <option value="ec">ENGINEERING CHEMISTRY</option>
+                        <option value="ce">COMMUNICATIVE ENGLISH</option>
+                        <option value="em">ENGINEERING MECHANICS</option>
+                        <option value="ct">CIRCUIT THEORY</option>
+                        <option value="eclab">ENGINEERING CHEMISTRY LAB</option>
+                        <option value="ecslab">ENGLISH COMMUNICATION SKILLS LAB</option>
+                        <option value="ctlab">CIRCUIT THEORY LAB</option>
+                        <option value="itw">IT WORKSHOP</option>
+                    </select>
+                </div>
+
+                <!-- ==================== SEMESTER II ==================== -->
+
+                <div id="eee_ii_subject-section">
+                    <label for="eee_ii_subject">Subject</label>
+                    <select name="subject" id="eee_ii_subject">
+                        <option value="">--Please select--</option>
+                        <option value="nmac">NUMERICAL METHODS &amp; ADVANCED CALCULUS</option>
+                        <option value="aomt">ADVANCED OPTICS AND MATERIALS TESTING</option>
+                        <option value="fc">FUNDAMENTALS OF COMPUTING</option>
+                        <option value="bed">BASIC ELECTRONIC DEVICES</option>
+                        <option value="eg">ENGINEERING GRAPHICS</option>
+                        <option value="eplab">ENGINEERING PHYSICS LAB</option>
+                        <option value="fclab">FUNDAMENTALS OF COMPUTING LAB</option>
+                        <option value="bedlab">BASIC ELECTRONIC DEVICES LAB</option>
+                        <option value="wp">WORKSHOP PRACTICE</option>
+                    </select>
+                </div>
+
+                <!-- ==================== SEMESTER III ==================== -->
+
+                <div id="eee_iii_subject-section">
+                    <label for="eee_iii_subject">Subject</label>
+                    <select name="subject" id="eee_iii_subject">
+                        <option value="">--Please select--</option>
+                        <option value="ps">PROBABILITY AND STATISTICS</option>
+                        <option value="na">NETWORK ANALYSIS</option>
+                        <option value="ef">ELECTRO MAGNETIC FIELDS</option>
+                        <option value="emi">ELECTRICAL MACHINES-I</option>
+                        <option value="de">DIGITAL ELECTRONICS</option>
+                        <option value="dsalab">DATA STRUCTURES AND ALGORITHMS LAB</option>
+                        <option value="dtilab">DESIGN THINKING AND INNOVATION LAB</option>
+                        <option value="milab">MEASUREMENTS AND INSTRUMENTATION LAB</option>
+                        <option value="es">ENVIRONMENTAL SCIENCE</option>
+                    </select>
+                </div>
+
+                <!-- ==================== SEMESTER IV ==================== -->
+
+                <div id="eee_iv_subject-section">
+                    <label for="eee_iv_subject">Subject</label>
+                    <select name="subject" id="eee_iv_subject">
+                        <option value="">--Please select--</option>
+                        <option value="cs">CONTROL SYSTEMS</option>
+                        <option value="lic">LINEAR INTEGRATED CIRCUITS</option>
+                        <option value="emii">ELECTRICAL MACHINES-II</option>
+                        <option value="ss">SIGNALS AND SYSTEMS</option>
+                        <option value="gt">GENERATION AND TRANSMISSION</option>
+                        <option value="pplab">PYTHON PROGRAMMING LAB</option>
+                        <option value="emilab">ELECTRICAL MACHINES-I LAB</option>
+                        <option value="deliclab">DIGITAL ELECTRONICS AND LINEAR INTEGRATED CIRCUITS LAB</option>
+                        <option value="hwys">HEALTH AND WELLNESS, YOGA AND SPORTS</option>
+                        <option value="ci">CONSTITUTION OF INDIA</option>
+                    </select>
+                </div>
+
+                <!-- ==================== SEMESTER V ==================== -->
+
+                <div id="eee_v_subject-section">
+                    <label for="eee_v_subject">Subject</label>
+                    <select name="subject" id="eee_v_subject">
+                        <option value="">--Please select--</option>
+                        <option value="mpm">MICRO PROCESSOR AND MICROCONTROLLER</option>
+                        <option value="psa">POWER SYSTEM ANALYSIS</option>
+                        <option value="pe">POWER ELECTRONICS</option>
+                        <option value="pei">PROFESSIONAL ELECTIVE-I</option>
+                        <option value="epds">ELECTRICAL POWER DISTRIBUTION SYSTEM</option>
+                        <option value="uep">UTILIZATION OF ELECTRICAL POWER</option>
+                        <option value="ot">OPTIMIZATION TECHNIQUES</option>
+                        <option value="joboei">JOB ORIENTED ELECTIVE-I</option>
+                        <option value="peait">PROMPT ENGINEERING AND AI TOOLS</option>
+                        <option value="dt">DRONE TECHNOLOGY</option>
+                        <option value="fevt">FUNDAMENTALS OF EV TECHNOLOGY</option>
+                        <option value="ss">SOFT SKILLS</option>
+                        <option value="mpmlab">MICRO PROCESSORS AND MICROCONTROLLER LAB</option>
+                        <option value="emiilab">ELECTRICAL MACHINES-II LAB</option>
+                        <option value="cslab">CONTROL SYSTEMS LAB</option>
+                        <option value="sii">SUMMER INTERNSHIP-I</option>
+                        <option value="tpwipr">TECHNICAL PAPER WRITING &amp; IPR</option>
+                    </select>
+                </div>
+            </div>
+            </div>
+            <input type="file" id="file_input" accept="pdf,image" multiple>
+        <script src="faculty_script.js"></script> 
+    </body>
+</html>
